@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opemipo — Computer Engineer & Developer</title>
+  <meta name="description" content="Portfolio of Opemipo, a computer engineering student building web applications and exploring cybersecurity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient cursor-following gradient -->
+  <div class="glow" id="glow" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">Opemipo</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <!-- Live visitor badge -->
+      <div class="visitor-badge" id="visitorBadge">
+        <span class="visitor-badge__dot"></span>
+        <span id="visitorText">Loading visitors…</span>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="hero__kicker">Computer Engineering Student · Web Developer</p>
+      <h1 class="hero__name">
+        <span class="hero__name-line">Opemipo</span>
+        <span class="hero__name-line hero__name-line--outline">Adebayo</span>
+      </h1>
+      <p class="hero__desc">
+        I build clean, functional web experiences — and I'm sharpening my focus toward
+        cybersecurity engineering. This site is one of the things I've built along the way.
+      </p>
+      <div class="hero__cta">
+        <a href="#work" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--outline">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section id="work" class="section">
+      <div class="section__head">
+        <p class="section__kicker">Selected work</p>
+        <h2 class="section__title">Things I've built</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card work-card--featured">
+          <div class="work-card__media">
+            <div class="work-card__placeholder">Banitex</div>
+          </div>
+          <div class="work-card__body">
+            <h3>Banitex — Streetwear E-commerce</h3>
+            <p>A full storefront with a working cart, category filtering, and a connected contact form. Built from scratch with HTML, CSS, and JavaScript.</p>
+            <div class="work-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Formspree</span>
+            </div>
+            <a href="#" class="work-card__link">View project →</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__media">
+            <div class="work-card__placeholder">Dev Portfolio</div>
+          </div>
+          <div class="work-card__body">
+            <h3>Terminal-Themed Portfolio</h3>
+            <p>An earlier portfolio styled like a developer terminal, with a typing animation and scroll-triggered reveals.</p>
+            <div class="work-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="work-card__link">View project →</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__media">
+            <div class="work-card__placeholder">Next Build</div>
+          </div>
+          <div class="work-card__body">
+            <h3>Project in Progress</h3>
+            <p>Swap this card for your next build once it's live — keep the structure, update the content.</p>
+            <div class="work-card__tags">
+              <span>TBD</span>
+            </div>
+            <a href="#" class="work-card__link">View project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section--about">
+      <div class="about__grid">
+        <div class="about__media">
+          <div class="about__photo-placeholder">Photo</div>
+        </div>
+        <div class="about__content">
+          <p class="section__kicker">About</p>
+          <h2 class="section__title">A bit about how I think</h2>
+          <p class="about__text">
+            I'm a computer engineering student with a habit of taking things apart to understand
+            them — whether that's a layout, a network, or a stubborn GPU driver. I've spent the
+            last stretch building real web projects end-to-end: design, code, deployment, and the
+            unglamorous debugging in between.
+          </p>
+          <p class="about__text">
+            Lately I've been narrowing in on cybersecurity engineering — the same instinct for
+            finding how systems break, pointed at making them harder to break into. I'm looking
+            for internship opportunities where I can keep learning by doing.
+          </p>
+          <ul class="about__facts">
+            <li><span>Based in</span>Nigeria</li>
+            <li><span>Studying</span>Computer Engineering</li>
+            <li><span>Focus area</span>Cybersecurity Engineering</li>
+            <li><span>Currently</span>Open to internships</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="section__head">
+        <p class="section__kicker">Capabilities</p>
+        <h2 class="section__title">What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-pill">
+          <h3>Frontend Development</h3>
+          <p>HTML, CSS, JavaScript — building responsive, accessible interfaces from scratch.</p>
+        </div>
+        <div class="skill-pill">
+          <h3>Version Control</h3>
+          <p>Git &amp; GitHub for tracking work, collaborating, and shipping projects.</p>
+        </div>
+        <div class="skill-pill">
+          <h3>Systems &amp; Troubleshooting</h3>
+          <p>Comfortable diagnosing hardware, driver, and performance-level issues.</p>
+        </div>
+        <div class="skill-pill">
+          <h3>Security Mindset</h3>
+          <p>Actively building toward cybersecurity engineering — learning how systems get broken into, and how to stop it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--contact">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p class="section__kicker">Get in touch</p>
+          <h2 class="section__title">Let's work together</h2>
+          <p class="about__text">
+            Open to internship opportunities, collaborations, or a conversation about web
+            development and cybersecurity. I aim to respond within 2 business days.
+          </p>
+          <div class="contact__alt">
+            <p class="contact__alt-label">Or reach me directly</p>
+            <a href="tel:+2347046917084">Contact info</a>
+            <a href="kingblaqops@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/opemipo">LinkedIn</a>
+            <a href="kingblaqops-source">GitHub</a>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/xvzjbygk"
+          method="POST"
+        >
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="jane@company.com">
+          </div>
+
+          <div class="form-row">
+            <label for="organization">Company / Organization <span class="optional">(optional)</span></label>
+            <input type="text" id="organization" name="organization" placeholder="Acme Inc.">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="I'd like to talk to you about..."></textarea>
+          </div>
+
+          <!-- Honeypot field to reduce spam -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn btn--primary btn--submit" id="submitBtn">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Opemipo. Built from scratch.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
